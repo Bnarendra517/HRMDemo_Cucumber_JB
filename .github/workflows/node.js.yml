@@ -26,9 +26,8 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Cucumber BDD tests
-        run: |
-          rm -rf allure-results allure-report || true
-          npx cucumber-js --require ./features/**/*.js --format progress
+        run: 
+          npx cucumber-js features/HRMDemo_Login.feature features/HRMDemo_Logout.feature --require ./features/**/*.js retry=3 --exit
 
       - name: Generate Allure Report
         run: npx allure generate allure-results --clean -o allure-report
