@@ -27,7 +27,7 @@ jobs:
 
       - name: Run Cucumber BDD tests
         run: 
-          cross-env ENV=qa npx cucumber-js features/HRMDemo_Login.feature features/HRMDemo_Logout.feature --require ./features/**/*.js retry=3 --exit
+          ENV=qa npx cucumber-js features/HRMDemo_Login.feature features/HRMDemo_Logout.feature --require ./features/**/*.js retry=3 --exit
       - name: Generate Allure Report
         run: npx allure generate allure-results --clean -o allure-report
 
