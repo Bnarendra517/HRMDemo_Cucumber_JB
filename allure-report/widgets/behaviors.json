@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"d38393c9ecdafaf0d4334c0f69e399a6","name":"Logout from OrangeHRM","statistic":{"failed":0,"broken":1,"skipped":0,"passed":2,"unknown":0,"total":3}},{"uid":"83e67da1a41fb93df1058628dbce301e","name":"Login to OrangeHRM","statistic":{"failed":0,"broken":0,"skipped":0,"passed":5,"unknown":0,"total":5}}]}

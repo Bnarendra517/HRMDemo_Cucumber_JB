@@ -1,0 +1,469 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-to-orangehrm;successful-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successful login with valid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the OrangeHRM login page",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5994479100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I enter username and password",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 915486500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I click on the login button",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4449123399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the dashboard page",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43579900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 2
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-orangehrm;unsuccessful-login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Unsuccessful login with invalid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I open the OrangeHRM login page",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6247658599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I enter username \"invalid\" and password \"invalid\"",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 913655900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click on the login button",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1858393199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see an error message containing \"Invalid credentials\"",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41220400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-orangehrm;blank-username-and-password-validation",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Blank username and password validation",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I open the OrangeHRM login page",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5833679800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I click on the login button without entering credentials",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1982204700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see validation messages \"Required\" for username and password",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5988700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-orangehrm;leading/trailing-spaces-in-username-are-trimmed",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Leading/trailing spaces in username are trimmed",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I open the OrangeHRM login page",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5244475700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I enter username \"  Admin  \" and password \"admin123\"",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 882462500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I click on the login button",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4254786299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see the dashboard page",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17867199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-orangehrm;forgot-password-link-navigates-to-reset-page",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Forgot password link navigates to reset page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I open the OrangeHRM login page",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5939302100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I click on the \"Forgot your password?\" link",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2593236100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I should see the Reset Password page",
+            "match": {
+              "location": "features\\step_definations\\loginSteps.js:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24500200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-to-orangehrm",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login to OrangeHRM",
+    "tags": [],
+    "uri": "features\\HRMDemo_Login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "logout-from-orangehrm;user-logs-out-successfully",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User logs out successfully",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in to OrangeHRM",
+            "match": {
+              "location": "features\\step_definations\\logoutSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10691972500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I open the user dropdown and click logout",
+            "match": {
+              "location": "features\\step_definations\\logoutSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1840329400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should be redirected to the login page",
+            "match": {
+              "location": "features\\step_definations\\logoutSteps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4737399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "logout-from-orangehrm;cannot-access-dashboard-after-logout-using-browser-back",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Cannot access dashboard after logout using browser back",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in to OrangeHRM",
+            "match": {
+              "location": "features\\step_definations\\logoutSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11248973200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I open the user dropdown and click logout",
+            "match": {
+              "location": "features\\step_definations\\logoutSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1949671399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I press browser back",
+            "match": {
+              "location": "features\\step_definations\\logoutSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60646000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should remain on or be redirected to the login page",
+            "match": {
+              "location": "features\\step_definations\\logoutSteps.js:45"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 451290999,
+              "error_message": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://opensource-demo.orangehrmlive.com/web/index.php/auth/login/auth/login\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login/auth/login\", waiting until \"load\"\u001b[22m\n\n    at AllureCucumberWorld.<anonymous> (C:\\Automation\\Playwright_JS_BDD_Cucumber\\features\\step_definations\\logoutSteps.js:49:25)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "logout-from-orangehrm;logout-option-visible-in-user-dropdown",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Logout option visible in user dropdown",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am logged in to OrangeHRM",
+            "match": {
+              "location": "features\\step_definations\\logoutSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10833219400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I open the user dropdown and click logout",
+            "match": {
+              "location": "features\\step_definations\\logoutSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2275234299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "logout-from-orangehrm",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Logout from OrangeHRM",
+    "tags": [],
+    "uri": "features\\HRMDemo_Logout.feature"
+  }
+]
